@@ -16,7 +16,7 @@
                 <p class="-translate-x-2">Join community of 1m+ founders </p>
             </div> -->
             <h1
-                class="text-center md:text-left text-5xl leading-[68px] md:text-6xl md:leading-[84px] font-medium max-w-xl text-white">
+                class="text-center md:text-left text-5xl leading-[68px] md:text-6xl md:leading-[84px] font-medium max-w-xl text-white uppercase">
                 Intelligent AI tools built to help.
             </h1>
             <p class="text-center md:text-left text-sm text-slate-200 max-w-lg mt-2">
