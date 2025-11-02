@@ -25,6 +25,7 @@
             </div>
         </div>
 
+        <!-- Layout About (untuk halaman about) -->
         <div v-else-if="route.meta.layout === 'tentang'">
             <div class="h-[40vh] bg-cover bg-center bg-no-repeat relative"
                 :style="{ backgroundImage: `url(${backgroundImage})` }">
@@ -41,6 +42,27 @@
 
                     <!-- Footer -->
                     <FooterComponent />
+                </div>
+            </div>
+        </div>
+
+        <!-- Layout login || register (menggunakan nested meta) -->
+        <div v-else-if="route.meta.layout === 'login' || route.meta.layout === 'register'">
+            <div class="h-screen bg-cover bg-center bg-no-repeat relative overflow-hidden"
+                :style="{ backgroundImage: `url(${backgroundImage})` }">
+
+                <!-- Glassmorphism Overlay -->
+                <div class="absolute inset-0 bg-white/10 backdrop-blur-sm"></div>
+
+                <div class="relative z-10 h-full flex flex-col">
+                    <!-- Navbar -->
+                    <NavBarComponent></NavBarComponent>
+
+                    <!-- Main Content Area -->
+                    <div class="flex-1 flex items-center justify-center">
+                        <!-- Langsung render component tanpa conditional lagi -->
+                        <RouterView />
+                    </div>
                 </div>
             </div>
         </div>
@@ -68,6 +90,8 @@ import matchaImage from '@/assets/matcha.jpg';
 import ramenImage from '@/assets/ramen.jpg';
 import sushiImage from '@/assets/sushi.jpg';
 import shabuImage from '@/assets/shabu.jpg';
+import LoginView from '@/view/public/LoginView.vue';
+import RegisterView from '@/view/public/RegisterView.vue';
 
 const route = useRoute();
 

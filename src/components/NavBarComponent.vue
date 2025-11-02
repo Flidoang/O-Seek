@@ -29,10 +29,9 @@
                         stroke="#353535" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                 </svg>
             </button>
-            <a class="hidden md:flex bg-indigo-600 text-white px-5 py-2 rounded-full text-sm font-medium hover:bg-indigo-700 transition"
-                href="#">
-                Sign up
-            </a>
+            <router-link class="hidden md:flex bg-indigo-600 text-white px-5 py-2 rounded-full text-sm font-medium hover:bg-indigo-700 transition" :to="{ name: 'Login' }">
+                Sign up 
+            </router-link>
             <button id="openMenu" class="md:hidden text-gray-600">
                 <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"
                     stroke-linecap="round" stroke-linejoin="round">
