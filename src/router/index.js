@@ -14,6 +14,7 @@ import DashboardView from '@/view/admin/DashboardView.vue'
 import ManagementView from '@/view/admin/ManagementView.vue'
 import InfoDonasiView from '@/view/admin/InfoDonasiView.vue'
 import CatatanAktivitasView from '@/view/admin/CatatanAktivitasView.vue'
+import DocumentationView from '@/view/admin/DocumentationView.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -79,6 +80,11 @@ const router = createRouter({
           path: 'catatan-aktivitas',
           name: 'CatatanAktivitas',
           component: CatatanAktivitasView,
+        },
+        {
+          path: 'documentation',
+          name: 'Documentation',
+          component: DocumentationView,
         },
       ],
     },
