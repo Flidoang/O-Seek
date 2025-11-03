@@ -15,6 +15,7 @@ import ManagementView from '@/view/admin/ManagementView.vue'
 import InfoDonasiView from '@/view/admin/InfoDonasiView.vue'
 import CatatanAktivitasView from '@/view/admin/CatatanAktivitasView.vue'
 import DocumentationView from '@/view/admin/DocumentationView.vue'
+import ForgotPwView from '@/view/public/ForgotPwView.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -53,6 +54,12 @@ const router = createRouter({
           name: 'Register',
           component: RegisterView,
           meta: { layout: 'register' },
+        },
+        {
+          path: 'forgot-password',
+          name: 'ForgotPassword',
+          component: ForgotPwView,
+          meta: { layout: 'forgotpw' },
         },
       ],
     },

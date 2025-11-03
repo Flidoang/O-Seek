@@ -37,10 +37,10 @@
 
                     <!-- Forgot Password -->
                     <div class="flex justify-end mt-2">
-                        <a href="#"
+                        <router-link :to="{ name: 'ForgotPassword' }"
                             class="text-xs md:text-sm text-indigo-600 hover:text-indigo-800 transition duration-200">
                             Forgot password?
-                        </a>
+                        </router-link>
                     </div>
 
                     <!-- Login Button -->

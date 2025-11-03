@@ -47,7 +47,7 @@
         </div>
 
         <!-- Layout login || register (menggunakan nested meta) -->
-        <div v-else-if="route.meta.layout === 'login' || route.meta.layout === 'register'">
+        <div v-else-if="route.meta.layout === 'login' || route.meta.layout === 'register' || route.meta.layout === 'forgotpw'">
             <div class="h-screen bg-cover bg-center bg-no-repeat relative overflow-hidden"
                 :style="{ backgroundImage: `url(${backgroundImage})` }">
 
